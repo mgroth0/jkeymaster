@@ -3,3 +3,7 @@ description = ''
 dependencies {
     compile group: 'net.java.dev.jna', name: 'jna', version:'4.2.1'
 }
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.2' //version required
+}
