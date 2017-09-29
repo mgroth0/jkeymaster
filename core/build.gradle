@@ -1,0 +1,5 @@
+
+description = ''
+dependencies {
+    compile group: 'net.java.dev.jna', name: 'jna', version:'4.2.1'
+}

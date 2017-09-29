@@ -1,0 +1,4 @@
+rootProject.name = 'jkeymaster-parent'
+include ':jkeymaster'
+
+project(':jkeymaster').projectDir = "$rootDir/core" as File
