@@ -63,7 +63,8 @@ public class CarbonProvider extends Provider {
         thread = new Thread(new Runnable() {
             public void run() {
                 synchronized (lock) {
-                    LOGGER.info("Installing Event Handler");
+                    LOGGER.debug("Installing Event Handler");
+
                     eventHandlerReference = new PointerByReference();
                     keyListener = new EventHandler();
 
