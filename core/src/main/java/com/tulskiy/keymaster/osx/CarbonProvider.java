@@ -136,7 +136,7 @@ public class CarbonProvider extends Provider {
             return;
         }
         hotKey.handler = gMyHotKeyRef;
-        LOGGER.info("Registered hotkey: " + keyCode);
+        // LOGGER.info("Registered hotkey: " + keyCode);
         hotKeys.put(id, hotKey);
     }
 
@@ -194,7 +194,7 @@ public class CarbonProvider extends Provider {
                 LOGGER.warn("Could not get event parameters. Error code: " + ret);
             } else {
                 int eventId = eventHotKeyID.id;
-                LOGGER.info("Received event id: " + eventId);
+//                 LOGGER.info("Received event id: " + eventId);
                 fireEvent(hotKeys.get(eventId));
             }
             return 0;
